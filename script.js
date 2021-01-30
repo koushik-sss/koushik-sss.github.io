@@ -1,19 +1,19 @@
 const video = document.getElementById('webcam');
-const button = document.getElementById('button');
-button.addEventListener('click', event => {
-  const constraints = {
-    video: true,
-    audio: false
-  };
-  navigator.mediaDevices
-    .getUserMedia(constraints)
-    .then(stream => {
-      video.srcObject = stream;
-    })
-    .catch(error => {
-      console.error(error);
-    });
-});
+// const button = document.getElementById('button');
+// button.addEventListener('click', event => {
+//   const constraints = {
+//     video: true,
+//     audio: false
+//   };
+//   navigator.mediaDevices
+//     .getUserMedia(constraints)
+//     .then(stream => {
+//       video.srcObject = stream;
+//     })
+//     .catch(error => {
+//       console.error(error);
+//     });
+// });
 
 const liveView = document.getElementById('liveView');
 const demosSection = document.getElementById('demos');
